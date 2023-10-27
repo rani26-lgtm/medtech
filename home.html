@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="style.css">
+    <title>Meditech</title>
+    <script >
+        const loginModal = document.getElementById("loginModal");
+ 
+ setTimeout(() => {
+     loginModal.style.display = "block";
+ }, 4000); // 4000 milliseconds = 4 seconds
+ 
+ document.getElementById("closeModalButton").addEventListener("click", () => {
+     loginModal.style.display = "none";
+ });
+ 
+ loginModal.addEventListener("click", (event) => {
+     if (event.target === loginModal) {
+         loginModal.style.display = "none";
+     }
+ });
+ 
+ document.getElementById("loginForm").addEventListener("submit", (event) => {
+     event.preventDefault();
+     const username = document.getElementById("username").value;
+     const password = document.getElementById("password").value;
+     // Perform your login logic here
+     alert(`Logged in as ${username}`);
+     loginModal.style.display = "none";
+ });
+ 
+     </script>
+ 
+</head>
+<body>
+      <header class="header">
+        <div class="logo">
+         
+                <img src="images/Picsart_23-10-10_06-34-41-503 (1).png">
+            
+              <div id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#Doctors">Doctors</a></li>
+                        <li><a href="Emergency">Emergency</a></li>
+                        <li><a href="#About_us">About us</a></li>
+                        <li><a href="#Contact_us">Contact us</a></li>
+                      
+                    </ul>
+
+            </nav>
+            <div class="right">
+              <a class="btn">Login/Signup</a>
+        
+        </div>
+        </div>
+      </header>
+      <section class="home" id="home">
+         <div class="image">
+            <img src="images/eldery_treatment_05.jpg">
+         </div>
+      </section>
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalButton">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+   
+      <div class="services"id="services">
+              <h1>Our Services</h1>
+      </div>
+      <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                  
+                    <h3>Emergency Services</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsam.
+                    </p>
+                    <a href="">read More</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                        <h3>Routine check-ups</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsam.
+                    </p>
+                    <a href="">read More</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                   
+                    <h3>Appointment Scheduling Process</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsam.
+                    </p>
+                    <a href="">read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                
+                  <h3>Patient Education</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsam.
+                  </p>
+                  <a href="">read More</a>
+              </div>
+          </div>
+
+      </div>
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                      <h3>Specialized Consultations</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsam.
+                  </p>
+                  <a href="">read More</a>
+              </div>
+          </div>
+
+      </div>
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                 
+                  <h3>Testimonials and Reviews</h3>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsam.
+                  </p>
+                  <a href="">read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+         <div class="Emergency">
+          <h1>Emergency Services</h1>
+n 
+         </div>
+</body>
+</html>
